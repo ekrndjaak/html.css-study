@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>사용자 인증 및 홈페이지</title>
+</head>
+<body>
+    <div id="loginPage">
+        <h1>로그인 페이지</h1>
+        <form id="loginForm">
+            <label for="username">사용자 이름:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">로그인</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+    <div id="homePage" style="display: none;">
+        <h1>안녕하세요, <span id="loggedInUsername"></span>님!</h1>
+        <p>본 홈페이지의 내용을 여기에 표시할 수 있습니다.</p>
+        <button id="logoutButton">로그아웃</button>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
