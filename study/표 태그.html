@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td{
+            border : 1px solid black;
+            border-collapse: collapse; 
+        }
+       
+        table {
+            width : 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 표 : table-->
+    <!-- 행 : tr -->
+    <!-- 셀: td(데이터), th(열 제목) -->
+    <table> 
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>연락처</th>
+                <th>이메일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>유재석</td>
+                <td>010-0000-0000</td>
+                <td>ryu@gmail.com</td>
+            </tr>
+            <tr>
+                <td>김종국</td>
+                <td>    010-0000-0001</td>
+                <td>kim@gmail.com</td>
+            </tr>
+            <tr>
+                <td>송지효</td>
+                <td>010-0000-0002</td>
+                <td>song@gmail.com</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>학년</th>
+                <th>반</th>
+                <th>학생수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">1grade</td>
+                <td>1class</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2class</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>2class</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">total</td>
+                <td>55people</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
